@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeatWave Music</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+    header {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
+
+    nav {
+      background: #222;
+      text-align: center;
+      padding: 12px 0;
+    }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ff4b2b; }
+
+    section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+    h2 { text-align: center; color: #ff416c; margin-bottom: 20px; }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .album {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .album h3 { margin-bottom: 10px; }
+    .album audio { width: 100%; margin-top: 10px; }
+
+    footer { background: #222; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BeatWave Music</h1>
+    <p>Listen, stream, and enjoy the best tracks online.</p>
+  </header>
+
+  <nav>
+    <a href="#albums">Albums</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="albums">
+    <h2>Featured Albums</h2>
+    <div class="albums">
+      <div class="album">
+        <h3>Summer Vibes</h3>
+        <audio controls>
+          <source src="sample1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="album">
+        <h3>Night Beats</h3>
+        <audio controls>
+          <source src="sample2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="album">
+        <h3>Acoustic Sessions</h3>
+        <audio controls>
+          <source src="sample3.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About BeatWave</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">BeatWave Music is a platform for music lovers to discover, stream, and enjoy tracks from talented artists worldwide.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form style="max-width:500px; margin:auto;">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" style="width:100%; padding:12px; background:#ff416c; color:#fff; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 BeatWave Music. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
